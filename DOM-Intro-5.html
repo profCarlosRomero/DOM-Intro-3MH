@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="secreto">Oculto</div>
+    <button onclick="ocultarElemento()">Mostrar/Ocultar</button>
+
+    <script>
+        function ocultarElemento() {
+            const elemento = document.getElementById("secreto");
+
+            // elemento.style.display = "none";
+            // elemento.hidden = true;
+
+            // Mostrar u ocultar el elemento
+            // elemento.hidden == true
+            if (elemento.hidden) {
+                elemento.hidden = false;
+            } else {
+                elemento.hidden = true;
+            }
+        }
+    </script>
+</body>
+</html>

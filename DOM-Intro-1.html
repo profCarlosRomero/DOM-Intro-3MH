@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mensaje"></p>
+    <button onclick="mensaje()">Mostrar mensaje</button>
+
+    <script>
+        function mensaje () {
+            // let nom_var para declarar variable en js
+            let parrafo = document.getElementById("mensaje");
+            parrafo.innerText = "Hola mundo";
+
+            // document.getElementById("mensaje").innerText = "Hola mundo";
+        }
+    </script>
+</body>
+</html>

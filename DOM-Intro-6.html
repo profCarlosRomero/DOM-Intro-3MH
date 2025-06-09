@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li onclick="eliminar(this)">Item 1</li>
+        <li onclick="eliminar(this)">Item 2</li>
+        <li onclick="eliminar(this)">Item 3</li>
+    </ul>
+    <script>
+        // El parametro elemento va a tener la referencia al objeto en dónde se realizó el evento
+        function eliminar(elemento) {
+            elemento.remove();
+        }
+    </script>
+</body>
+</html>

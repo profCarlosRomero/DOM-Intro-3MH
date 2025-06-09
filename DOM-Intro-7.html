@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="tarea">
+    <button id="btnAgregar">Agregar tarea</button>
+    <ul id="tareas"></ul>
+
+    <script>
+        document.getElementById("btnAgregar").addEventListener("click", agregarTarea);
+
+        function agregarTarea () {
+            // Obtener el valor del input
+            const texto = document.getElementById("tarea").value;
+
+            // Crear el elemento li
+            const tarea = document.createElement("li");
+            tarea.innerText = texto;
+
+            // Agregarle un button al li que permita eliminarlo
+            const btn = document.createElement("button");
+            btn.addEventListener("click", function (){
+                tarea.remove();
+            });
+            btn.innerText = "Eliminar";
+            tarea.appendChild(btn);
+
+            // Agregarlo
+            document.getElementById("tareas").appendChild(tarea);
+        }
+    </script>
+</body>
+</html>

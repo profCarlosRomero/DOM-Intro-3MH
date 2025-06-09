@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lista"></ul>
+    <button onclick="agregar()">Agregar</button>
+
+    <script>
+        let cont = 0;
+        
+        function agregar () {
+            const item = document.createElement("li");
+            item.textContent = `Momo ${cont}`;
+
+            const lista = document.getElementById("lista");
+            lista.appendChild(item);
+
+            cont++;
+        }
+    </script>
+</body>
+</html>

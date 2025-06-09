@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="texto">Texto</p>
+    <button onclick="cambiarEstilo()">Cambiar estilo</button>
+
+    <script>
+        let fontSize = 25;
+        
+        function cambiarEstilo () {
+            const texto = document.getElementById("texto");
+
+            // cambiar el color al texto
+            texto.style.color = "red";
+
+            // cambiar el tamaño al texto
+            // texto.style.fontSize = "25px";
+            
+            // ¿Cómo podría aumentar el tamaño de 25px en 25px?
+            texto.style.fontSize = `${fontSize}px`;
+            fontSize += 25;
+        }
+    </script>
+</body>
+</html>
